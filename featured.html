@@ -1,0 +1,35 @@
+---
+layout: page
+permalink: /featured/
+title: FEATURED POSTS
+description: "An archive of posts sorted by date."
+---
+{% assign featuredcount = '0' %}
+{% for post in site.posts %}
+  {% if post.featured %}
+  {% assign featuredcount = featuredcount | plus:'1' %}
+    <article class="summer-index-post post row">
+        <div class="small-12 medium-3 large-2 columns datetime">
+            <span class="summer-post-meta">
+                <span class="episode">
+                    {{ post.title }}
+                </span>
+            </span>
+        </div>
+        <div class="small-12 medium-9 large-10 columns">
+            <header class="summer-post-header">
+                <h3 class="summer-post-title">
+                    <a href="{{ site.url }}{{ post.url }}">
+                        <img src="{{ post.cover }}" alt="Episode {{ post.title }}">
+                    </a>
+                </h3>
+            </header>
+        </div>
+    </article>
+  {% endif %}
+{% endfor %}
+{% if featuredcount == '0' %}
+<div class="summer-page-title row">
+    <h1>No posts has been featured yet</h1>
+</div>
+{% endif %}

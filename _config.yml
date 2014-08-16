@@ -1,0 +1,39 @@
+title:            SOULHEALINGRADIO
+description:      "We play vinyl records"
+logo_black:       logo_black.png
+logo_white:       logo_white.png
+disqus_shortname: soulhealingradio
+share:            true
+
+url:              http://manumaticx.github.io/shr
+
+# Owner/author information
+owner:
+  name:           Soulhealing Radio
+  avatar:         shr_big.png
+  email:          soulhealingradio@elpg.de
+  description:    "We play vinyl records"
+  twitter:        soulhealing_fm
+  soundcloud:     soulhealingradio
+  mixcloud:       soulhealingradio
+
+google_analytics:   UA-47472538-2
+
+# Links to include in footer navigation
+# For external links add external: true
+links:
+  - title: Featured
+    url: /featured
+  - title: About
+    url: /about
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    Europe/Berlin
+future:      true
+highlighter: pygments
+markdown:    kramdown
+paginate:    5
+paginate_path: "page:num"
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:title

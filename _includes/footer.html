@@ -1,0 +1,73 @@
+<footer class="summer-site-footer">
+    <div class="copyright">
+         <section>&copy; {{ site.time | date: '%Y' }}
+           <a href="{{ site.url }}about">{{ site.owner.name }}</a>
+           &bull; All rights reserved. &bull;
+           <a href="{{ site.url }}imprint.html">Impressum</a>
+         </section>
+         <section>
+           <a href="https://github.com/hmfaysal/Notepad">Notepad</a> Theme by <a href="https://twitter.com/hmfaysal">hmfaysal</a>
+         </section>
+    </div>
+    <div class="social-icons">
+
+        {% if site.owner.twitter %}
+        <a href="http://twitter.com/{{ site.owner.twitter }}">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-twitter fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
+        {% if site.owner.google_plus %}
+        <a href="{{ site.owner.google_plus }}">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-google-plus fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
+        {% if site.owner.instagram %}
+        <a href="http://instagram.com/{{ site.owner.instagram }}">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-instagram fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
+        {% if site.owner.github %}
+        <a href="http://github.com/{{ site.owner.github }}">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-github fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
+        {% if site.owner.facebook %}
+        <a href="http://facebook.com/{{ site.owner.facebook }}">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-facebook fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
+        {% if site.owner.soundcloud %}
+        <a href="https://soundcloud.com/{{ site.owner.soundcloud }}">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-soundcloud fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
+        {% if site.owner.mixcloud %}
+        <a href="http://www.mixcloud.com/{{ site.owner.mixcloud }}">
+            <span class="fa-stack fa-lg">
+                <i class="fa fa-circle fa-stack-2x fa-inverse"></i>
+                <i class="fa fa-music fa-stack-1x"></i>
+            </span>
+        </a>
+        {% endif %}
+    </div>
+
+    <div class="cf"></div>
+</footer>
