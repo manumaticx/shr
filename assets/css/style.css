@@ -145,7 +145,7 @@ a:hover { color: #ccc; }
 .summer-site-head .summer-site-head-content {
   width: 100%;
   text-align: center;
-  background-image: url(/images/head.jpg);
+  background-image: url(../images/head.jpg);
   background-size: cover; }
   .summer-site-head .summer-site-head-content .summer-site-head-title-bg {
     display: inline-block;
