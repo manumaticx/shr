@@ -4,6 +4,11 @@ permalink: /about/index.html
 title: About
 ---
 
+_"Music was created on our beautiful earth for healing our soul.
+I truly believe in music, any music; Jazz, Disco, Funk.
+Music has no nationality, no discrimination, no border.
+Listen and dance to the music, let it go across from place to place, from men to women, from black to white, from father to son, from brother to brother, from soul to soul."_
+
 <figure class="half">
   <img src="{{ site.url }}/images/about/manu.jpg">
 	<img src="{{ site.url }}/images/about/fips.jpg">
