@@ -15,7 +15,7 @@ owner:
   email:          soulhealingradio@elpg.de
   description:    "We play vinyl records"
   twitter:        soulhealing_fm
-  soundcloud:     soulhealingradio
+  facebook:       soulhealingradio
   mixcloud:       soulhealingradio
 
 google_analytics:   UA-47472538-2
@@ -23,10 +23,11 @@ google_analytics:   UA-47472538-2
 # Links to include in footer navigation
 # For external links add external: true
 links:
-  - title: Featured
-    url: /featured
   - title: About
     url: /about
+  - title: Shop
+    url: http://soulhealing.spreadshirt.de
+    external: true
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    Europe/Berlin
