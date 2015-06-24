@@ -23,6 +23,8 @@ google_analytics:   UA-47472538-2
 # Links to include in footer navigation
 # For external links add external: true
 links:
+  - title: Live
+    url: /live
   - title: About
     url: /about
   - title: Shop
