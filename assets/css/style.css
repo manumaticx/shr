@@ -34,11 +34,11 @@ a:hover { color: #ccc; }
   .summer-blog-menu .summer-mobile-menu a {
     display: inline-block;
     outline: none;
-    color: white;
+    color: black;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem; }
     .summer-blog-menu .summer-mobile-menu a:hover {
-      color: white; }
+      color: black; }
   .summer-blog-menu ul {
     background: black;
     position: absolute;
@@ -110,7 +110,7 @@ a:hover { color: #ccc; }
           text-align: left;
           padding: 0; }
           .summer-blog-menu ul li a {
-            color: white;
+            color: black;
             display: inline-block;
             border-bottom: 0.1875rem solid transparent;
             width: auto;
