@@ -34,11 +34,11 @@ a:hover { color: #ccc; }
   .summer-blog-menu .summer-mobile-menu a {
     display: inline-block;
     outline: none;
-    color: black;
+    color: white;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem; }
     .summer-blog-menu .summer-mobile-menu a:hover {
-      color: black; }
+      color: white; }
   .summer-blog-menu ul {
     background: black;
     position: absolute;
@@ -110,7 +110,7 @@ a:hover { color: #ccc; }
           text-align: left;
           padding: 0; }
           .summer-blog-menu ul li a {
-            color: black;
+            color: white;
             display: inline-block;
             border-bottom: 0.1875rem solid transparent;
             width: auto;
@@ -198,8 +198,7 @@ a:hover { color: #ccc; }
 .summer-content .summer-index-post {
   visibility: hidden;
   padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 0.0625rem solid #d9d9d9; }
+  padding-bottom: 2.5rem; }
   .summer-content .summer-index-post:first-of-type {
     padding-top: 5rem; }
   .summer-content .summer-index-post .datetime {
@@ -367,32 +366,6 @@ nav.pagination {
     .summer-site-footer .social-icons {
       text-align: right;
       float: right; } }
-
-.fadeInDown {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-name: fadeInDown;
-  animation-name: fadeInDown;
-  visibility: visible !important; }
-
-@-webkit-keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-    transform: translateY(-20px); }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-    transform: translateY(0); } }
-@keyframes fadeInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform: translateY(-20px);
-    -ms-transform: translateY(-20px);
-    transform: translateY(-20px); }
 
   100% {
     opacity: 1;
