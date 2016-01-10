@@ -6,8 +6,11 @@
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
 <header class="summer-site-head">
     <div class="summer-site-head-menu">
-        <a class="summer-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo }}" alt="Blog Logo" /></a>
-
+    {% if site.theme %}
+        <a class="summer-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/logo-{{ site.theme }}.png" alt="Blog Logo" /></a>
+    {% else %}
+        <a class="summer-blog-logo" href="{{ site.url }}"><img src="{{ site.url }}/images/{{ site.logo_white }}" alt="Blog Logo" /></a>
+    {% endif %}
 
         <div class="summer-blog-menu">
     <div class="summer-mobile-menu show-for-small">
@@ -29,7 +32,12 @@
 </div>
         <div class="clearfix"></div>
     </div>
+    <div class="summer-site-head-content" >
+        <div class="summer-site-head-bg"></div>
+        <a href="{{ site.url }}"><img src="{{ site.url }}/images/shr.png" alt="Blog Logo"></a>
+    </div>
 </header>
+
 
 <main class="summer-content" role="main">
 
