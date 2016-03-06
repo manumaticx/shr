@@ -28,8 +28,7 @@ links:
   - title: About
     url: /about
   - title: Party
-    url: https://www.facebook.com/soulhealingradio/events
-    external: true
+    url: /party
   - title: Shop
     url: http://soulhealing.spreadshirt.de
     external: true
