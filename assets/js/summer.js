@@ -2,27 +2,12 @@
 
 var summer = (function ($) {
 
-    var indexPostClass = '.summer-index-post',
-        mobileMenuButton = '.summer-mobile-menu a',
+    var mobileMenuButton = '.summer-mobile-menu a',
         mobileMenuCloseButton = '.summer-mobile-close-btn',
         mainMenu = '.summer-menu',
         bgCheckClass = '.bg-check',
         postBgImages = '.bg-img img',
         postCoverImg = '.summer-post-header .bg-img',
-
-    // post animations on homepage
-    indexPostAnimate = function () {
-        if ($(indexPostClass).length) {
-            $(indexPostClass).each(function () {
-            var postPos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop(),
-                windowHeight = $(window).height();
-                if (postPos < topOfWindow + (windowHeight/ 1.4)) {
-                    $(this).addClass('fadeInDown');
-                }
-            });
-        }
-    },
 
     mobileMenu = function () {
         if($(mainMenu).length) {
@@ -56,10 +41,6 @@ var summer = (function ($) {
 
     // summer javascripts initialization
     init = function () {
-        indexPostAnimate();
-        $(window).on('scroll', function() {
-            indexPostAnimate();
-        });
         postHeaderCoverImg();
         mobileMenu();
         headerTitlesBackgroundCheck();
