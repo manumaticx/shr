@@ -8,6 +8,8 @@ var MixcloudBox = React.createClass({
     return {data: []};
   },
   componentDidMount: function() {
+    
+    // Load shows
     $.ajax({
       url: this.props.url,
       dataType: 'json',
@@ -51,7 +53,7 @@ var MixcloudList = React.createClass({
     var covers = groups.map(function(group, index){
       var row = group.map(function(track){
         return (
-          <MixcloudCover key={track.key} img={track.pictures.large} name={track.name} />
+          <MixcloudCover {...track} />
         );
       });
       
@@ -70,7 +72,7 @@ var MixcloudCover = React.createClass({
   render: function() {
     return (
       <div className="column">
-        <img src={this.props.img} className="thumbnail" alt={this.props.name} />
+        <img src={this.props.pictures.large} className="thumbnail" alt={this.props.name} />
       </div>
     );
   }
