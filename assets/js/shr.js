@@ -8,7 +8,7 @@ var MixcloudBox = React.createClass({
     return {data: []};
   },
   componentDidMount: function() {
-    
+
     // Load shows
     $.ajax({
       url: this.props.url,
@@ -53,30 +53,31 @@ var MixcloudList = React.createClass({
     var covers = groups.map(function(group, index){
       var row = group.map(function(track){
         return (
-          <MixcloudCover {...track} />
+          <MixcloudCover {...track} mouseOver={e => console.log(e)} />
         );
       });
-      
+
       return (
         <div key={index} className="row small-up-1 medium-up-2 large-up-4">{row}</div>
       );
     });
-    
+
     return (
       <div>{covers}</div>
     );
   }
 });
 
-var MixcloudCover = React.createClass({
-  render: function() {
-    return (
-      <div className="column">
-        <img src={this.props.pictures.large} className="thumbnail" alt={this.props.name} />
-      </div>
-    );
-  }
-});
+const MixcloudCover = (props) => {
+  return (
+    <div className="column">
+      <a href={props.url} target="_blank">
+        <span className="cover-title">{props.name}</span>
+        <img src={props.pictures.large} className="thumbnail" alt={props.name} />
+      </a>
+    </div>
+  );
+}
 
 ReactDOM.render(
   <MixcloudBox url={Mixcloud.API + Mixcloud.User + "/cloudcasts/"} />,
