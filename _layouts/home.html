@@ -4,14 +4,23 @@
 {% include head.html %}
 </head>
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
-<header class="summer-site-head">
-    <div class="summer-site-head-content" >
-        <div class="summer-site-head-bg"></div>
-        <a href="{{ site.url }}"><img src="{{ site.url }}/images/shr.png" alt="Blog Logo"></a>
+<header class="summer-page-header">
+    <div class="summer-page-menu-header">
+      <a class="summer-blog-logo" href="{{ site.url }}">
+          <img src="{{ site.url }}/images/{{ site.logo_black }}" alt="Blog Logo">
+      </a>
+    </div>
+    
+    <div class="row">
+      <div class="small-2 large-4 columns"><!-- ... --></div>
+      <div class="small-4 large-4 columns">
+        <a href="https://www.facebook.com/events/286400748455097/">
+          <img src="{{ site.url }}/images/_10_front_v2_small.png" alt="Soulhealing Dance Night 20.05.2017" />
+        </a>
+      </div>
+      <div class="small-6 large-4 columns"><!-- ... --></div>
     </div>
 </header>
-
-
 <main class="summer-content" role="main">
 
             {{ content }}
